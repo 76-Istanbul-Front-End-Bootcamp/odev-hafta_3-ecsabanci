@@ -13,13 +13,10 @@ class Animal {
     
     showImage() {
       
-      let p = document.createElement("p");
+      let p = document.querySelector("p");
       p.innerHTML = this.name +"'s picture";
-      let body = document.querySelector("body");
-      let img = document.createElement("img");
+      let img = document.querySelector("img");
       img.setAttribute("src",this.url);
-      body.appendChild(p);
-      body.appendChild(img);
       
     }
     
